@@ -1,0 +1,25 @@
+{% extends "tasks/layout.html" %}
+{% block body %}
+<form action="{% url 'tasks:update' task.id %}" method="POST">
+  {% csrf_token %}
+<h1> Modificar tarea</h1>
+<table class="table table-striped table-bordered table-sm">  
+  <thead class="thead-dark">  
+  <tr>  
+      <th>Task id</th>  
+      <th>Task Name</th>  
+      <th>Task Priority</th>  
+  </tr>  
+  </thead>  
+  <tbody>  
+  <tr>  
+      <td> {{ task.id }} </td>
+      <td> <input type="text" name="name" id="name" required maxlength="64" value="{{ task.name }}"/> </td>  
+      <td> <input type="number" name="priority" id="priority" value="{{ task.priority}}"/>  </td>  
+  </tr>  
+  </tbody>  
+</table>
+<input type="submit">
+
+ 
+{% endblock %}
