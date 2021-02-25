@@ -1,5 +1,22 @@
 body {
     background-color:lightsteelblue;
     font-size:large;
-    color: purple;
+    color: blue;  
+    text-align: center;
+    padding-top: 2%;
+    column-span: all;
+    margin-top: 3%;
+    margin-inline: 2%;
+    
+}
+tr,th,td {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+
+#btn  {
+    text-align: center;
+
 }

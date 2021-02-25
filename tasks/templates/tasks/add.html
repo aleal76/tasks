@@ -4,7 +4,8 @@
 <form action="{% url 'tasks:add' %}" method="POST">
     {% csrf_token %}
     {{ form }}
-    <input type="submit">
+    <input class="btn btn-primary" type="submit">
 </form>
-<a href="{% url 'tasks:index' %}">Tasks List</a>
+<a class="btn btn-primary" href="{% url 'tasks:index' %}" role="button"> Agregar nueva Tarea</a>
+
 {% endblock %}
