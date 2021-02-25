@@ -40,12 +40,12 @@ def update(request, id):
     print(task,"en update task")
     if request.method == "POST":
         form = TaskForm(request.POST)
-        print(form, "modified")
+        print(form)
         task.name = form.cleaned_data["name"]
         task.priority = form.cleaned_data["priority"]
         print(task,"after")
         if form.is_valid():
-            form.save()
+            task.save()
             return HttpResponseRedirect(reverse("tasks:index"))
         else:
             return render(request, "tasks/edit.html", {
