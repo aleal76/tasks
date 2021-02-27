@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ["68.183.21.2"]
 
 INSTALLED_APPS = [
     'tasks',
+    'frontend.apps.FrontendConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
