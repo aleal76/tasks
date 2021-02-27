@@ -7,7 +7,7 @@ export default class Add extends Component {
 
   render() {
     return (
-       <p>Aquí agregaremos tareas</p>
+       <p>Aquí agregaremos tareassss</p>
     );
   }
 }
