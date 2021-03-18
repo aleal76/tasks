@@ -7,7 +7,8 @@ export default class Edit extends Component {
 
   render() {
     return (
-       <p>Aquí editamos tareas</p>
+       <h1>Aquí edisstamos tareas conss React en crash course</h1> 
+      
     );
   }
 }
